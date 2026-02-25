@@ -1,36 +1,35 @@
-*{
+* {
   box-sizing: border-box;
 }
-.wrapper{
+.wrapper {
   position: relative;
   display: inline-block;
 }
-.wrapper .infoBox{
+.wrapper .infoBox {
   position: absolute;
   display: flex;
   width: 100%;
   align-items: center;
   padding: 20px;
 }
-.infoBox .enemyHealthBox{
+.infoBox .enemyHealthBox {
   position: relative;
   height: 30px;
   width: 100%;
 }
-.enemyhealthBox .healthBg{
+.enemyhealthBox .healthBg {
   background-color: yellow;
   height: 30px;
 }
-.enemyhealthBox .enemyHealthBar{
+.enemyhealthBox .enemyHealthBar {
   position: absolute;
   background: blue;
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
-  
 }
-.infoBox .timer{
+.infoBox .timer {
   background-color: red;
   width: 100px;
   height: 100px;

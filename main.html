@@ -1,31 +1,84 @@
-<!doctype html>
-<html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fight!</title>
-  <link rel="stylesheet" href="style.css" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+  </style>
 </head>
-
 <body>
-  <div class="wrapper">
-    <div class="infoBox">
-      <!-- player health -->
-      <div class="health"></div>
-
-      <!-- timer -->
-      <div class="timer"></div>
-
-      <!-- enemy health -->
-      <div class="enemyHealthBox">
-        <div id="enemyHealthBar" ,class="healthBg"></div>
-        <div class="enemyHealthBar"></div>
+<!-- red container box -->
+   <div style="position: relative;display: inline-block;">
+      <div 
+        style="
+          position: absolute;
+          display: flex;
+          width: 100%;
+          align-items: center;
+          padding: 20px;
+        ">
+        <!-- player health bar -->
+        <div style="position: relative; height: 30px; width: 100%; display: flex; justify-content: flex-end">
+          <div style="background-color: yellow; height: 30px; width: 100%;"> 
+          </div>
+          <div
+            id="playerHealth"
+            style="
+              position: absolute;
+              background:green;
+              top: 0;
+              right: 0;
+              bottom: 0;
+              width: 100%;
+          "></div>
+        </div>
+        <!-- timer box -->
+        <div 
+          id="Timer"
+          style="
+            background-color: purple;
+            height: 100px; 
+            width: 100px;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          ">
+          10
+          </div>
+        <!-- enemy health bar -->
+        <div style="position: relative; height: 30px; width: 100%;">
+          <div
+          style="background-color: yellow; height: 30px; width: 100%;"> 
+          </div>
+          <div
+          id="enemyHealth"
+          style="
+            position: absolute;
+            background:red;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+          "></div>
+        </div>
       </div>
+    <div
+      id="displayText"
+      style="
+      position: absolute;
+      color: white;
+      align-items: center;
+      justify-content: center;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      display: none;
+    ">
     </div>
     <canvas></canvas>
-  </div>
+    </div> 
+
   <script src="index.js"></script>
 </body>
-
-</html>

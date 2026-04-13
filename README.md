@@ -7,7 +7,7 @@ This project was created to practice and understand **basic programming concepts
 
 ---
 
-## 🚀 Features
+##  Features
 
 - Two fighters with health bars
 - Timer for each round
